@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lili Sweet Box | Pâtisserie Maison</title>
+
+    <meta
+        name="description"
+        content="Lili Sweet Box - Pâtisserie maison, cookies, brownies et sweet boxes préparées avec amour."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span class="logo-script">Lili</span>
+        <span class="logo-sub">SWEET BOX</span>
+    </div>
+
+    <nav id="navMenu">
+        <a href="#home">Accueil</a>
+        <a href="#menu">Nos Box</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <span class="small-title">
+            🍰 PÂTISSERIE MAISON
+        </span>
+
+        <h1>
+            Le plaisir fait maison
+            <span>à chaque bouchée !</span>
+        </h1>
+
+        <p>
+            Découvrez nos délicieux cookies, brownies et mini cakes,
+            préparés avec amour et présentés dans de jolies Sweet Boxes.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="btn primary">
+                Découvrir nos Box
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Commander
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-box">
+
+        <div class="floating-heart heart1">♥</div>
+        <div class="floating-heart heart2">♥</div>
+
+        <div class="sweet-box">
+
+            <div class="box-top">
+                Lili
+                <small>SWEET BOX</small>
+            </div>
+
+            <div class="desserts">
+
+                <div class="dessert cookie">🍪</div>
+                <div class="dessert brownie">🍫</div>
+                <div class="dessert cookie">🍪</div>
+
+                <div class="dessert brownie">🍫</div>
+                <div class="dessert cupcake">🧁</div>
+                <div class="dessert brownie">🍫</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="feature">
+        <div>❤️</div>
+        <h3>Fait maison</h3>
+        <p>Préparé avec amour</p>
+    </div>
+
+    <div class="feature">
+        <div>✨</div>
+        <h3>Qualité</h3>
+        <p>Des ingrédients soigneusement choisis</p>
+    </div>
+
+    <div class="feature">
+        <div>🎁</div>
+        <h3>Élégant</h3>
+        <p>Des Box prêtes à offrir</p>
+    </div>
+
+    <div class="feature">
+        <div>🍪</div>
+        <h3>Gourmand</h3>
+        <p>Des douceurs pour tous les goûts</p>
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="section-title">
+
+        <span>NOTRE MENU</span>
+
+        <h2>
+            Choisissez votre
+            <strong>Sweet Box</strong>
+        </h2>
+
+        <p>
+            Des petites douceurs préparées spécialement pour vous.
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- BOX 1 -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+                🍪
+            </div>
+
+            <div class="product-content">
+
+                <span class="badge">BEST SELLER</span>
+
+                <h3>Classic Box</h3>
+
+                <p>
+                    4 Cookies + 2 Brownies
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        45 DH
+                    </span>
+
+                    <button
+                        class="order-btn"
+                        onclick="order('Classic Box - 45 DH')">
+                        Commander
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOX 2 -->
+
+        <article class="product-card">
+
+            <div class="product-image chocolate">
+                🍫
+            </div>
+
+            <div class="product-content">
+
+                <span class="badge">CHOCOLAT</span>
+
+                <h3>Choco Box</h3>
+
+                <p>
+                    3 Brownies + 3 Cookies chocolat
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        50 DH
+                    </span>
+
+                    <button
+                        class="order-btn"
+                        onclick="order('Choco Box - 50 DH')">
+                        Commander
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOX 3 -->
+
+        <article class="product-card">
+
+            <div class="product-image cookie-bg">
+                🍪🍪
+            </div>
+
+            <div class="product-content">
+
+                <span class="badge">COOKIE LOVERS</span>
+
+                <h3>Cookie Lovers</h3>
+
+                <p>
+                    6 grands Cookies
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        45 DH
+                    </span>
+
+                    <button
+                        class="order-btn"
+                        onclick="order('Cookie Lovers - 45 DH')">
+                        Commander
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOX 4 -->
+
+        <article class="product-card">
+
+            <div class="product-image pink">
+                🧁🍪🍫
+            </div>
+
+            <div class="product-content">
+
+                <span class="badge">GOURMAND</span>
+
+                <h3>Sweet Box</h3>
+
+                <p>
+                    2 Brownies + 2 Cookies + 2 Mini Cakes
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        55 DH
+                    </span>
+
+                    <button
+                        class="order-btn"
+                        onclick="order('Sweet Box - 55 DH')">
+                        Commander
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BOX 5 -->
+
+        <article class="product-card premium">
+
+            <div class="product-image premium-bg">
+                👑🧁🍪🍫
+            </div>
+
+            <div class="product-content">
+
+                <span class="badge premium-badge">
+                    PREMIUM
+                </span>
+
+                <h3>Lili Premium</h3>
+
+                <p>
+                    3 Cookies + 3 Brownies +
+                    2 Mini Cakes + décoration
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        70 DH
+                    </span>
+
+                    <button
+                        class="order-btn"
+                        onclick="order('Lili Premium - 70 DH')">
+                        Commander
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-card">
+
+        <div class="about-icon">
+            🧁
+        </div>
+
+        <div>
+
+            <span class="small-title">
+                NOTRE HISTOIRE
+            </span>
+
+            <h2>
+                Une petite pâtisserie,
+                <span>beaucoup d'amour.</span>
+            </h2>
+
+            <p>
+                Lili Sweet Box est une petite pâtisserie maison
+                créée pour partager des douceurs simples,
+                gourmandes et préparées avec passion.
+            </p>
+
+            <p>
+                Chaque Box est préparée à la commande afin de
+                vous offrir une expérience fraîche et délicieuse.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INSTAGRAM ================= -->
+
+<section class="instagram">
+
+    <div class="section-title">
+
+        <span>INSTAGRAM</span>
+
+        <h2>
+            Suivez <strong>@lilisweetbox</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="instagram-grid">
+
+        <div>🍪</div>
+        <div>🍫</div>
+        <div>🧁</div>
+        <div>🎁</div>
+        <div>🍪</div>
+        <div>🍫</div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <div>
+
+            <span class="small-title">
+                COMMANDES
+            </span>
+
+            <h2>
+                Une petite envie
+                <span>sucrée ?</span>
+            </h2>
+
+            <p>
+                Passez votre commande directement par WhatsApp.
+                Nous vous répondrons rapidement.
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-item">
+                <span>📱</span>
+                <div>
+                    <small>WhatsApp</small>
+                    <strong>06 12 34 56 78</strong>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <small>Zone</small>
+                    <strong>Votre ville</strong>
+                </div>
+            </div>
+
+            <a
+                href="https://wa.me/212690956892"
+                target="_blank"
+                class="whatsapp-btn">
+
+                💬 Commander sur WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Lili Sweet Box
+    </div>
+
+    <p>
+        Fait maison avec ❤️
+    </p>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Lili Sweet Box — Tous droits réservés.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
